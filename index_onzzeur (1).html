@@ -2,97 +2,89 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Onzzeur - Musique en ligne</title>
+  <title>Onzzeur - Styles de Musique</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #111, #222);
+      color: white;
       margin: 0;
-      background: #121212;
-      color: #fff;
+      padding: 0;
     }
-    header, footer {
-      background-color: #1f1f1f;
+    header {
+      background-color: #1DB954;
+      padding: 2rem;
       text-align: center;
-      padding: 20px;
     }
-    nav a {
-      margin: 0 15px;
-      color: #fff;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: #333;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      margin-bottom: 1rem;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #1DB954;
+      color: white;
       text-decoration: none;
+      border-radius: 8px;
     }
-    section {
-      padding: 40px;
-    }
-    h2 {
-      color: #ff4d00;
-    }
-    audio {
-      margin-bottom: 20px;
-      display: block;
+    .card a:hover {
+      background-color: #14833b;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Onzzeur</h1>
-    <p>Écoutez de la musique, découvrez des artistes, abonnez-vous pour du contenu exclusif !</p>
-    <nav>
-      <a href="#rap">Rap</a>
-      <a href="#pop">Pop</a>
-      <a href="#funk">Funk</a>
-      <a href="#originals">Onzzeur Originals</a>
-      <a href="#abonnement">Abonnement</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>🎵 Onzzeur - Explore les Styles de Musique</h1>
   </header>
-
-  <section id="rap">
-    <h2>Rap</h2>
-    <audio controls>
-      <source src="musique/rap1.mp3" type="audio/mpeg">
-      Votre navigateur ne supporte pas l'audio.
-    </audio>
-  </section>
-
-  <section id="pop">
-    <h2>Pop</h2>
-    <audio controls>
-      <source src="musique/pop1.mp3" type="audio/mpeg">
-      Votre navigateur ne supporte pas l'audio.
-    </audio>
-  </section>
-
-  <section id="funk">
-    <h2>Funk</h2>
-    <audio controls>
-      <source src="musique/funk1.mp3" type="audio/mpeg">
-      Votre navigateur ne supporte pas l'audio.
-    </audio>
-  </section>
-
-  <section id="originals">
-    <h2>Onzzeur Originals</h2>
-    <audio controls>
-      <source src="musique/original1.mp3" type="audio/mpeg">
-      Votre navigateur ne supporte pas l'audio.
-    </audio>
-  </section>
-
-  <section id="abonnement">
-    <h2>Abonnement</h2>
-    <p>Abonnez-vous pour accéder à des morceaux inédits chantés par nos artistes maison !</p>
-    <p>Tarif : 4,99€/mois</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : contact@onzzeur.com</p>
-    <p>Suivez-nous sur les réseaux sociaux !</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Onzzeur. Tous droits réservés.</p>
-  </footer>
+  <main class="container">
+    <div class="card">
+      <h2>🎤 Rap</h2>
+      <p>Découvre les dernières vibes et les classiques du rap.</p>
+      <a href="https://soundcloud.com/tags/rap" target="_blank">Écouter sur SoundCloud</a>
+    </div>
+    <div class="card">
+      <h2>🎷 Jazz</h2>
+      <p>Plonge dans l’univers du jazz, entre improvisation et élégance.</p>
+      <a href="https://www.jazzradio.fr/" target="_blank">JazzRadio</a>
+    </div>
+    <div class="card">
+      <h2>🎸 Rock</h2>
+      <p>Du rock classique aux riffs modernes, ça déménage !</p>
+      <a href="https://www.rockradio.com/" target="_blank">RockRadio</a>
+    </div>
+    <div class="card">
+      <h2>🎧 Électro</h2>
+      <p>Ambiances électroniques, clubs et festivals au menu.</p>
+      <a href="https://www.edm.com/" target="_blank">EDM.com</a>
+    </div>
+    <div class="card">
+      <h2>🎻 Classique</h2>
+      <p>La beauté intemporelle de la musique classique.</p>
+      <a href="https://www.francemusique.fr/" target="_blank">France Musique</a>
+    </div>
+  </main>
 </body>
 </html>
+
