@@ -39,6 +39,26 @@
       text-shadow: 0 0 8px #d36eff;
     }
 
+    .tryhard-link {
+      color: #ff33cc;
+      font-weight: bolder;
+      text-shadow: 0 0 10px #ff33cc;
+      position: relative;
+      animation: pulseTryHard 2s infinite;
+    }
+    .tryhard-link:hover {
+      color: #ff66dd;
+      text-shadow: 0 0 20px #ff66dd;
+    }
+    @keyframes pulseTryHard {
+      0%, 100% {
+        text-shadow: 0 0 10px #ff33cc;
+      }
+      50% {
+        text-shadow: 0 0 25px #ff99ee;
+      }
+    }
+
     header {
       padding-top: 5rem;
       background: linear-gradient(90deg, #6a0dad, #000);
@@ -107,6 +127,19 @@
       background-color: #8e2de2;
     }
 
+    /* Style spécial pour la carte "Try Hard" */
+    .card.tryhard {
+      background: linear-gradient(135deg, #d91dd9, #6a0dad);
+      box-shadow: 0 0 15px #ff33cc;
+      color: white;
+      border: 2px solid #ff33cc;
+      transition: transform 0.3s, box-shadow 0.5s;
+    }
+    .card.tryhard:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 30px #ff66dd;
+    }
+
     footer {
       background: #140022;
       text-align: center;
@@ -130,6 +163,7 @@
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#styles">Styles</a>
+    <a href="#tryhard" class="tryhard-link">Try Hard Brawl Stars</a>
     <a href="#contact">Contact</a>
   </nav>
 
@@ -139,13 +173,13 @@
 
   <div class="slideshow-container">
     <div class="slide fade">
-      <img src="https://source.unsplash.com/1600x400/?music,concert" alt="Concert">
+      <img src="https://source.unsplash.com/1600x400/?music,concert" alt="Concert" />
     </div>
     <div class="slide fade">
-      <img src="https://source.unsplash.com/1600x400/?dj,night" alt="DJ">
+      <img src="https://source.unsplash.com/1600x400/?dj,night" alt="DJ" />
     </div>
     <div class="slide fade">
-      <img src="https://source.unsplash.com/1600x400/?headphones,sound" alt="Casque audio">
+      <img src="https://source.unsplash.com/1600x400/?headphones,sound" alt="Casque audio" />
     </div>
   </div>
 
@@ -153,27 +187,32 @@
     <div class="card">
       <h2>🎤 Rap</h2>
       <p>Découvre les dernières vibes et les classiques du rap.</p>
-      <a href="https://soundcloud.com/tags/rap" target="_blank">Écouter sur SoundCloud</a>
+      <a href="https://soundcloud.com/tags/rap" target="_blank" rel="noopener noreferrer">Écouter sur SoundCloud</a>
     </div>
     <div class="card">
       <h2>🎷 Jazz</h2>
       <p>Plonge dans l’univers du jazz, entre improvisation et élégance.</p>
-      <a href="https://www.jazzradio.fr/" target="_blank">JazzRadio</a>
+      <a href="https://www.jazzradio.fr/" target="_blank" rel="noopener noreferrer">JazzRadio</a>
     </div>
     <div class="card">
       <h2>🎸 Rock</h2>
       <p>Du rock classique aux riffs modernes, ça déménage !</p>
-      <a href="https://www.rockradio.com/" target="_blank">RockRadio</a>
+      <a href="https://www.rockradio.com/" target="_blank" rel="noopener noreferrer">RockRadio</a>
     </div>
     <div class="card">
       <h2>🎧 Électro</h2>
       <p>Ambiances électroniques, clubs et festivals au menu.</p>
-      <a href="https://www.edm.com/" target="_blank">EDM.com</a>
+      <a href="https://www.edm.com/" target="_blank" rel="noopener noreferrer">EDM.com</a>
     </div>
     <div class="card">
       <h2>🎻 Classique</h2>
       <p>La beauté intemporelle de la musique classique.</p>
-      <a href="https://www.francemusique.fr/" target="_blank">France Musique</a>
+      <a href="https://www.francemusique.fr/" target="_blank" rel="noopener noreferrer">France Musique</a>
+    </div>
+    <div class="card tryhard" id="tryhard">
+      <h2>🔥 Try Hard Brawl Stars</h2>
+      <p>Des sons funk qui envoient fort pour try hard tes games !</p>
+      <a href="https://www.youtube.com/results?search_query=phonk+brawl+stars+try+hard" target="_blank" rel="noopener noreferrer">Écouter sur YouTube</a>
     </div>
   </main>
 
@@ -192,136 +231,11 @@
         slides[i].style.display = "none";
       }
       slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1;}
+      if (slideIndex > slides.length) { slideIndex = 1; }
       slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 4000);
     }
   </script>
 
-</body>
-</html>
-  overflow: hidden;
-    }
-
-    .slide {
-      display: none;
-      width: 100%;
-    }
-
-    .slide img {
-      width: 100%;
-      max-height: 400px;
-      object-fit: cover;
-    }
-
-    .fade {
-      animation-name: fade;
-      animation-duration: 2s;
-    }
-
-    @keyframes fade {
-      from { opacity: 0.4; }
-      to { opacity: 1; }
-    }
-
-    main.container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      padding: 2rem;
-    }
-
-    .card {
-      background-color: #1c1c1c;
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(128,0,128,0.4);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card h2 {
-      margin-bottom: 1rem;
-    }
-
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #6a0dad;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-    }
-
-    .card a:hover {
-      background-color: #8e2de2;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo">🎵 Onzzeur</div>
-  </header>
-
-  <div class="slideshow-container">
-    <div class="slide fade">
-      <img src="https://source.unsplash.com/1600x400/?music,concert" alt="Concert">
-    </div>
-    <div class="slide fade">
-      <img src="https://source.unsplash.com/1600x400/?dj,night" alt="DJ">
-    </div>
-    <div class="slide fade">
-      <img src="https://source.unsplash.com/1600x400/?headphones,sound" alt="Casque audio">
-    </div>
-  </div>
-
-  <main class="container">
-    <div class="card">
-      <h2>🎤 Rap</h2>
-      <p>Découvre les dernières vibes et les classiques du rap.</p>
-      <a href="https://soundcloud.com/tags/rap" target="_blank">Écouter sur SoundCloud</a>
-    </div>
-    <div class="card">
-      <h2>🎷 Jazz</h2>
-      <p>Plonge dans l’univers du jazz, entre improvisation et élégance.</p>
-      <a href="https://www.jazzradio.fr/" target="_blank">JazzRadio</a>
-    </div>
-    <div class="card">
-      <h2>🎸 Rock</h2>
-      <p>Du rock classique aux riffs modernes, ça déménage !</p>
-      <a href="https://www.rockradio.com/" target="_blank">RockRadio</a>
-    </div>
-    <div class="card">
-      <h2>🎧 Électro</h2>
-      <p>Ambiances électroniques, clubs et festivals au menu.</p>
-      <a href="https://www.edm.com/" target="_blank">EDM.com</a>
-    </div>
-    <div class="card">
-      <h2>🎻 Classique</h2>
-      <p>La beauté intemporelle de la musique classique.</p>
-      <a href="https://www.francemusique.fr/" target="_blank">France Musique</a>
-    </div>
-  </main>
-
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      const slides = document.getElementsByClassName(\"slide\");
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = \"none\";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1; }
-      slides[slideIndex - 1].style.display = \"block\";
-      setTimeout(showSlides, 4000);
-    }
-  </script>
 </body>
 </html>
