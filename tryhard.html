@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Onzzeur - Try Hard Brawl Stars</title>
+  <style>
+    body {
+      margin: 0; padding: 4rem 2rem 2rem 2rem;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #111, #222);
+      color: white;
+      min-height: 100vh;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: #140022;
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      box-shadow: 0 2px 10px #6a0dad;
+      z-index: 100;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+    }
+    nav li {
+      position: relative;
+    }
+    nav > ul > li > a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      display: block;
+      cursor: pointer;
+    }
+    nav li:hover > a,
+    nav li:focus-within > a {
+      background: #6a0dad;
+      border-radius: 6px;
+    }
+    nav ul ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #6a0dad;
+      border-radius: 6px;
+      display: none;
+      min-width: 160px;
+      padding: 0.5rem 0;
+      box-shadow: 0 4px 10px rgba(106, 13, 173, 0.7);
+    }
+    nav li:hover > ul,
+    nav li:focus-within > ul {
+      display: block;
+    }
+    nav ul ul li {
+      padding: 0;
+      margin: 0;
+    }
+    nav ul ul li a {
+      padding: 0.5rem 1rem;
+      color: white;
+      display: block;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    nav ul ul li a:hover {
+      background: #8e2de2;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #d36eff;
+    }
+    .card {
+      background-color: #333;
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 4px 12px rgba(128, 0, 128, 0.7);
+      text-align: center;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #6a0dad;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background-color: #8e2de2;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="#">Musique ▾</a>
+        <ul>
+          <li><a href="rap.html">Rap</a></li>
+          <li><a href="jazz.html">Jazz</a></li>
+          <li><a href="classique.html">Classique</a></li>
+          <li><a href="rock.html">Rock</a></li>
+          <li><a href="electro.html">Électro</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Jeux vidéo ▾</a>
+        <ul>
+          <li><a href="tryhard.html">Try Hard Brawl Stars</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>🔥
