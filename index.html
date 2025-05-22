@@ -1,134 +1,53 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Onzzeur - Accueil</title>
+  
+  <!-- Favicon : logo Deezer inversé -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/OpenAI-ChatGPT/dev-assets/main/deezer-logo-inverse.png" />
+
   <style>
     body {
-      margin: 0; padding: 0;
+      margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(to bottom, #111, #222);
       color: white;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
     }
-    header {
-      margin-bottom: 3rem;
-    }
-    header img {
-      width: 120px;
-      margin-bottom: 1rem;
-    }
-    nav {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: #140022;
-      display: flex;
-      justify-content: center;
-      padding: 1rem 0;
-      box-shadow: 0 2px 10px #6a0dad;
-      z-index: 100;
-      font-weight: bold;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 2rem;
-    }
-    nav li {
-      position: relative;
-    }
-    nav > ul > li > a {
-      color: white;
-      text-decoration: none;
-      padding: 0.5rem 1rem;
-      display: block;
-      cursor: pointer;
-    }
-    nav li:hover > a,
-    nav li:focus-within > a {
-      background: #6a0dad;
-      border-radius: 6px;
-    }
-    /* Sous-menu */
-    nav ul ul {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #6a0dad;
-      border-radius: 6px;
-      display: none;
-      min-width: 160px;
-      padding: 0.5rem 0;
-      box-shadow: 0 4px 10px rgba(106, 13, 173, 0.7);
-    }
-    nav li:hover > ul,
-    nav li:focus-within > ul {
-      display: block;
-    }
-    nav ul ul li {
-      padding: 0;
-      margin: 0;
-    }
-    nav ul ul li a {
-      padding: 0.5rem 1rem;
-      color: white;
-      display: block;
-      text-decoration: none;
-      white-space: nowrap;
-    }
-    nav ul ul li a:hover {
-      background: #8e2de2;
+
+    img.logo {
+      width: 160px;
+      margin-bottom: 1.5rem;
     }
 
-    main {
-      max-width: 600px;
-      padding: 1rem;
-    }
     h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      color: #d36eff;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
+
     p {
-      font-size: 1.3rem;
-      line-height: 1.5;
+      font-size: 1.2rem;
       color: #ccc;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Musique ▾</a>
-        <ul>
-          <li><a href="rap.html">Rap</a></li>
-          <li><a href="jazz.html">Jazz</a></li>
-          <li><a href="classique.html">Classique</a></li>
-          <li><a href="rock.html">Rock</a></li>
-          <li><a href="electro.html">Électro</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Jeux vidéo ▾</a>
-        <ul>
-          <li><a href="tryhard.html">Try Hard Brawl Stars</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
 
-  <main>
-    <header>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Spotify_icon.svg/2048px-Spotify_icon.svg.png" alt="Logo Onzzeur" />
-      <h1>Bienvenue sur Onzzeur 🎵🎮</h1>
-    </header>
-    <p>Explore les styles de musique et les musiques qui envoient dans les jeux vidéo.</p>
-  </main>
+  <!-- Logo Deezer inversé affiché -->
+  <img class="logo" src="https://raw.githubusercontent.com/OpenAI-ChatGPT/dev-assets/main/deezer-logo-inverse.png" alt="Logo Deezer inversé">
+
+  <!-- Message d'accueil -->
+  <h1>Bienvenue sur Onzzeur 🎶</h1>
+  <p>Découvre la musique et les sons qui envoient fort.</p>
+
 </body>
 </html>
+
+  
