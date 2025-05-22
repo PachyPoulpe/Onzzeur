@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Onzzeur - Accueil</title>
-
-  <!-- Favicon (logo Deezer inversé) -->
-  <link rel="icon" type="image/png" href="https://i.imgur.com/Ca3V5b5.png" />
+  
+  <!-- Favicon : logo Deezer inversé -->
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/OpenAI-ChatGPT/dev-assets/main/deezer-logo-inverse.png" />
 
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+      background: linear-gradient(to bottom, #111, #222);
       color: white;
       display: flex;
       flex-direction: column;
@@ -22,43 +22,30 @@
       text-align: center;
     }
 
-    .logo-container {
-      margin-bottom: 2rem;
-    }
-
-    .logo-container img {
-      width: 180px;
-      transform: scaleX(-1); /* Inverser l'image */
+    img.logo {
+      width: 160px;
+      margin-bottom: 1.5rem;
     }
 
     h1 {
-      font-size: 3rem;
-      color: #c057f7;
+      font-size: 2.5rem;
       margin-bottom: 1rem;
     }
 
     p {
       font-size: 1.2rem;
-      max-width: 600px;
       color: #ccc;
-    }
-
-    .icons {
-      font-size: 2rem;
-      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
 
-  <!-- Logo Deezer inversé sans retourner le texte -->
-  <div class="logo-container">
-    <img src="https://i.imgur.com/Ca3V5b5.png" alt="Logo Onzzeur">
-  </div>
+  <!-- Logo Deezer inversé affiché -->
+  <img class="logo" src="https://raw.githubusercontent.com/OpenAI-ChatGPT/dev-assets/main/deezer-logo-inverse.png" alt="Logo Deezer inversé">
 
-  <h1>Bienvenue sur Onzzeur</h1>
-  <div class="icons">🎵 🎮</div>
-  <p>Explore les styles de musique et les musiques qui envoient fort dans les jeux vidéo.</p>
+  <!-- Message d'accueil -->
+  <h1>Bienvenue sur Onzzeur 🎶</h1>
+  <p>Découvre la musique et les sons qui envoient fort.</p>
 
 </body>
 </html>
