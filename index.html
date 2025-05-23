@@ -1,4 +1,3 @@
-	
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -16,14 +15,28 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      animation: fadeIn 1s ease;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     header {
       margin-bottom: 3rem;
     }
     header img {
       width: 120px;
       margin-bottom: 1rem;
+      animation: spin 5s linear infinite;
     }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -57,7 +70,7 @@
       background: #6a0dad;
       border-radius: 6px;
     }
-    /* Sous-menu */
+
     nav ul ul {
       position: absolute;
       top: 100%;
@@ -102,12 +115,24 @@
       line-height: 1.5;
       color: #ccc;
     }
+
+    .about {
+      margin-top: 2rem;
+      padding: 1rem;
+      border-top: 1px solid #555;
+      font-size: 1.1rem;
+      color: #bbb;
+    }
+
+    .about strong {
+      color: #ff9efc;
+    }
   </style>
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="#">Musique ▾</a>
+      <li><a href="#">🎵 Musique ▾</a>
         <ul>
           <li><a href="rap.html">Rap</a></li>
           <li><a href="jazz.html">Jazz</a></li>
@@ -116,7 +141,7 @@
           <li><a href="electro.html">Électro</a></li>
         </ul>
       </li>
-      <li><a href="#">Jeux vidéo ▾</a>
+      <li><a href="#">🎮 Jeux vidéo ▾</a>
         <ul>
           <li><a href="tryhard.html">Try Hard Brawl Stars</a></li>
         </ul>
@@ -130,6 +155,13 @@
       <h1>Bienvenue sur Onzzeur 🎵🎮</h1>
     </header>
     <p>Explore les styles de musique et les musiques qui envoient dans les jeux vidéo.</p>
+
+    <div class="about">
+      <p><strong>À propos :</strong> Ce site est une vitrine de styles musicaux et d’ambiances gaming. Clique sur un style ou un jeu pour découvrir des playlists ou des recommandations créées avec passion !</p>
+    </div>
   </main>
 </body>
-</html3E
+</html>
+	
+    
+    
