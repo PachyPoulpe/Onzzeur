@@ -219,39 +219,39 @@
     <p>&copy; 2025 Onzzeur. Tous droits réservés.</p>
   </footer>
   <script>
-// Liste d'emojis personnalisable
-const emojis = ['🎵', '🎶', '🎧', '✨', '🎉', '💿', '🎼', '🕺', '💃', '🎤'];
+  // Liste d'emojis personnalisable
+  const emojis = ['🎵', '🎶', '🎧', '✨', '🎉', '💿', '🎼', '🕺', '💃', '🎤'];
 
-function randomEmoji() {
-  const el = document.createElement('span');
-  el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-  el.style.position = 'fixed';
-  el.style.left = `${Math.random() * 100}vw`;
-  el.style.top = '-3em';
-  el.style.fontSize = `${Math.random() * 2 + 1.2}em`;
-  el.style.opacity = Math.random() * 0.5 + 0.5;
-  el.style.pointerEvents = 'none';
-  el.style.zIndex = 9999;
-  el.style.transition = 'transform 7s linear, opacity 7s linear';
+  function randomEmoji() {
+    const el = document.createElement('span');
+    el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+    el.style.position = 'fixed';
+    el.style.left = `${Math.random() * 100}vw`;
+    el.style.top = '-3em';
+    el.style.fontSize = `${Math.random() * 2 + 1.2}em`;
+    el.style.opacity = Math.random() * 0.5 + 0.5;
+    el.style.pointerEvents = 'none';
+    el.style.zIndex = 9999;
+    el.style.transition = 'transform 7s linear, opacity 7s linear';
 
-  // Mouvement aléatoire
-  const translateX = (Math.random() - 0.5) * 30; // px
-  const rotate = (Math.random() - 0.5) * 360; // degrés
+    // Mouvement aléatoire
+    const translateX = (Math.random() - 0.5) * 30; // px
+    const rotate = (Math.random() - 0.5) * 360; // degrés
 
-  document.body.appendChild(el);
+    document.body.appendChild(el);
 
-  setTimeout(() => {
-    el.style.transform = `translateY(110vh) translateX(${translateX}vw) rotate(${rotate}deg)`;
-    el.style.opacity = 0;
-  }, 50);
+    setTimeout(() => {
+      el.style.transform = `translateY(110vh) translateX(${translateX}vw) rotate(${rotate}deg)`;
+      el.style.opacity = 0;
+    }, 50);
 
-  setTimeout(() => {
-    el.remove();
-  }, 7000);
-}
+    setTimeout(() => {
+      el.remove();
+    }, 7000);
+  }
 
-// Fréquence d'apparition (ajuste si besoin)
-setInterval(randomEmoji, 350);
-</script>
+  // Fréquence d'apparition (ajuste si besoin)
+  setInterval(randomEmoji, 350);
+  </script>
 </body>
 </html>
